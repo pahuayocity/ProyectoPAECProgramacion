@@ -1,0 +1,121 @@
+@charset "utf-8";
+header{
+	font-family:"Arial Black", Gadget, sans-serif;
+	background-image: url('Header.jpg');
+	background-size: cover;
+	text-align:center;
+	padding:50px;
+	font-size:36px;
+	color:#FFF;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	}
+	
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding: 0;
+	flex-direction:row; 
+	}
+	nav{
+		background-color: #009dff;
+		font-size: 20px;
+		margin-top: 50px;
+		color: rgb(255, 254, 254);
+		display:flex;
+		flex-direction:row;
+        padding: 0px;
+		margin: 0px;
+	
+	}
+	.MenuHorizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	}
+	.MenuHorizontal > li > a{
+		display: block;
+		padding: 15px 23px;
+		color: white;
+		text-decoration: none;
+	}
+	
+	.MenuHorizontal > li:hover{
+		background-color: black;
+	}
+	
+	.MenuVer{
+		position: absolute;
+		display: none;
+		list-style: none;
+		width: 200px;
+		background-color: blue;
+		color:white;
+	}
+	
+	.MenuHorizontal li:hover .MenuVer {
+		display: block;
+		flex-direction: row;
+	}
+	.MenuVer li:hover {
+		background-color: black;
+		display: inline-block;
+
+	}
+	.MenuVer li a{
+		display: block;
+		color: white;
+		padding: 15px 15px 15px 20px;
+		text-decoration: none;
+		flex-direction: row;
+	}
+.Textos{
+		display: flex;
+		flex-wrap: wrap;
+		
+			}
+section{
+				color: rgb(255, 255, 255);
+				flex:70%;
+				padding:20px;
+				background-color: #053959;
+				padding: 10px;
+				font-size: 20px;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+.PAX {
+			float: right;
+			position: absolute;
+			top: 500px; /* Ajusta la distancia desde la parte superior */
+			left: 1000px; 
+			margin-right: 20px;
+		}
+.Vaso{
+	flex-direction: row;
+	background-color: #0c89d6;
+	padding: 10px;
+}
+h5{
+	background-size: 38px;
+	text-align: center;
+	color: white;
+}
+aside{
+	flex:30px;
+	padding:0px;
+	background-size: cover;
+	
+}
+
+footer{
+    padding: 10px;
+    color: #FFF;
+    background-color: rgb(34, 83, 83);
+    text-align: center;
+}
+
+    @media screen and (max-width: 700px){
+        nav, .container{
+       flex-direction: column;
+       }
+    }
